@@ -1,0 +1,20 @@
+{
+  "name": "mindset-node-be",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yushisalvador/mindset-node-be.git"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/yushisalvador/mindset-node-be/issues"
+  },
+  "homepage": "https://github.com/yushisalvador/mindset-node-be#readme"
+}
