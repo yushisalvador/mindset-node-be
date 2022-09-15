@@ -9,4 +9,10 @@ const diaryController = require("../diary/diary_controller");
 
 router.get("/entries", diaryController.getAllEntries);
 
+// @desc Fetch user entries
+// @access Public for now
+// @route GET /api/myentries?username=
+
+router.get("/myentries", diaryController.getUserEntries);
+
 module.exports = router;

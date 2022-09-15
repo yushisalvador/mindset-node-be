@@ -5,4 +5,12 @@ function getAllEntries() {
   return knex.select("*").from("entries").catch(console.error);
 }
 
-module.exports = { getAllEntries };
+function getUserEntries(username) {
+  return knex
+    .select("*")
+    .from("entries")
+    .where("username", username)
+    .catch(console.error);
+}
+
+module.exports = { getAllEntries, getUserEntries };
