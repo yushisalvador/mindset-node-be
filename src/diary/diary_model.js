@@ -13,4 +13,16 @@ function getUserEntries(username) {
     .catch(console.error);
 }
 
-module.exports = { getAllEntries, getUserEntries };
+function addNewEntry(post) {
+  return knex.insert(post).into("entries").catch(console.error);
+}
+
+function deleteEntry(id) {
+  return knex("entries")
+    .select("*")
+    .where("entries.id", id)
+    .del()
+    .catch(console.error);
+}
+
+module.exports = { getAllEntries, getUserEntries, addNewEntry, deleteEntry };
